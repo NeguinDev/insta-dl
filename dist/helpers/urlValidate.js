@@ -13,3 +13,4 @@ function isUrlValidInstagram(url) {
     }
 }
 exports.isUrlValidInstagram = isUrlValidInstagram;
+//# sourceMappingURL=urlValidate.js.map

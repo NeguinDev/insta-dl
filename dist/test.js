@@ -10,3 +10,4 @@ const promises_1 = require("node:fs/promises");
     const buffer = Buffer.from(arrayBuffer);
     (0, promises_1.writeFile)('video.mp4', buffer);
 })();
+//# sourceMappingURL=test.js.map

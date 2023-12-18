@@ -1,6 +1,6 @@
 {
   "name": "@neguin/insta-dl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple API to get direct link to videos/images from Instagram",
   "main": "dist/index.js",
   "scripts": {

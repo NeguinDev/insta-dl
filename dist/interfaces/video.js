@@ -7,3 +7,4 @@ var IsXdtGraphMediaInterface;
     IsXdtGraphMediaInterface["XDTGraphSidecar"] = "XDTGraphSidecar";
     IsXdtGraphMediaInterface["XDTGraphVideo"] = "XDTGraphVideo";
 })(IsXdtGraphMediaInterface || (exports.IsXdtGraphMediaInterface = IsXdtGraphMediaInterface = {}));
+//# sourceMappingURL=video.js.map
