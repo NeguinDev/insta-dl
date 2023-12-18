@@ -11,6 +11,7 @@
 ## Installation
 ```bash
 npm install @neguin/insta-dl
+npx playwright install
 ```
 
 ## Usage
