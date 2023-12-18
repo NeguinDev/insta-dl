@@ -59,7 +59,10 @@ function getMediaFromGraphql(data) {
         throw new Error('Video not found');
     const videoUrl = shortcodeMedia?.video_url;
     if (videoUrl) {
-        return [videoUrl];
+        return {
+            type: 'video',
+            urls: [videoUrl]
+        };
     }
     if ('edge_sidecar_to_children' in shortcodeMedia) {
         const mediaUrls = getMediaUrlsSideCar(data);
@@ -70,14 +73,19 @@ function getMediaFromGraphql(data) {
     throw new Error('Video not found');
 }
 function getMediaUrlsSideCar(data) {
+    let type;
     const sidecar = data?.data?.xdt_shortcode_media?.edge_sidecar_to_children;
     const mediaUrl = sidecar?.edges
         ?.map(({ node }) => {
         const video = node?.video_url;
         const image = node?.display_url;
+        type = video ? 'video' : 'image';
         return video || image;
     })
         .filter((url) => url);
-    return mediaUrl;
+    return {
+        urls: mediaUrl,
+        type: type || 'image',
+    };
 }
 //# sourceMappingURL=index.js.map

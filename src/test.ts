@@ -5,7 +5,7 @@ import { writeFile } from "node:fs/promises";
 	const urlDownload = await instaDl('https://www.instagram.com/p/C0-fN1dLPNi/');
 	console.log(urlDownload);
 
-	const response = await fetch(urlDownload[0]);
+	const response = await fetch(urlDownload.urls[0]);
 	const arrayBuffer = await response.arrayBuffer();
 	const buffer = Buffer.from(arrayBuffer);
 	
