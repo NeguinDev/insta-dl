@@ -1,10 +1,11 @@
 {
-  "name": "insta-dl",
+  "name": "@neguin/insta-dl",
   "version": "1.0.0",
   "description": "simple API to get direct link to videos/images from Instagram",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "tsx watch src"
+	"build": "tsc",
+	"test": "tsx watch src/test"
   },
   "keywords": [],
   "author": "NeguinDev",
