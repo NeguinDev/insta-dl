@@ -2,7 +2,7 @@ import { chromium, Page } from 'playwright';
 import { InstagramMedia } from './interfaces/instagram';
 import { isUrlValidInstagram } from './helpers/urlValidate';
 
-export async function instaDownload(url: string): Promise<string[]> {
+export async function instaDl(url: string): Promise<string[]> {
 	if (!isUrlValidInstagram(url)) throw new Error('Invalid URL');
 
 	const browser = await chromium.launch();

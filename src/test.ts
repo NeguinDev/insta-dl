@@ -1,8 +1,8 @@
-import { instaDownload } from ".";
+import { instaDl } from ".";
 import { writeFile } from "node:fs/promises";
 
 (async () => {
-	const urlDownload = await instaDownload('https://www.instagram.com/p/C0kcuC_r72m/');
+	const urlDownload = await instaDl('https://www.instagram.com/p/C0kcuC_r72m/');
 	console.log(urlDownload);
 
 	const response = await fetch(urlDownload[0]);
