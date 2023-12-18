@@ -21,7 +21,7 @@ Example:
 const { instaDownload } = require('insta-dl');
 
 (async () => {
-    const mediaUrls = await instaDownload('https://www.instagram.com/p/C0-fN1dLPNi/');
+    const mediaUrls = await instaDl('https://www.instagram.com/p/C0-fN1dLPNi/');
     console.log(mediaUrls);
 })();
 ```
