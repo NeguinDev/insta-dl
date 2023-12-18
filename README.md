@@ -1,7 +1,7 @@
 # insta-dl
 
 ## Overview
-`insta-dl` is a tool for downloading media from Instagram. It uses Playwright to interact with Instagram pages and extract media URLs.
+`@neguin/insta-dl` is a tool for downloading media from Instagram. It uses Playwright to interact with Instagram pages and extract media URLs.
 
 ## Features
 - Validates Instagram URLs.
@@ -10,7 +10,7 @@
 
 ## Installation
 ```bash
-npm install insta-dl
+npm install @neguin/insta-dl
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ To download media from an Instagram URL, use the `instaDl` function. This functi
 
 Example:
 ```javascript
-const { instaDownload } = require('insta-dl');
+const { instaDownload } = require('@neguin/insta-dl');
 
 (async () => {
     const mediaUrls = await instaDl('https://www.instagram.com/p/C0-fN1dLPNi/');
