@@ -28,7 +28,10 @@ const { instaDownload } = require('@neguin/insta-dl');
 
 Output:
 ```json
-[
-    "https://scontent.cdninstagram.com/v/t50.2886-16/411871655_6943863569015015_2167177240664383492_n.mp4?_nc_ht=scontent.cdninstagram.com&_nc_cat=111&_nc_ohc=CEO103UVEfEAX_axHSD&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfBP_Z24NC2U_2z2BBBhfoBp0AGPrqZyXITd_ZvRnmOiGQ&oe=6581A508&_nc_sid=10d13b"
-]
+{
+	"type": "video",
+	"urls": [
+    	"https://scontent.cdninstagram.com/v/t50.2886-16/411871655_6943863569015015_2167177240664383492_n.mp4?_nc_ht=scontent.cdninstagram.com&_nc_cat=111&_nc_ohc=CEO103UVEfEAX_axHSD&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfBP_Z24NC2U_2z2BBBhfoBp0AGPrqZyXITd_ZvRnmOiGQ&oe=6581A508&_nc_sid=10d13b"
+	]
+}
 ```
